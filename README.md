@@ -7,10 +7,16 @@ In the project directory, you can run:
 ### `npm start`
 
 Runs the app in the development mode.<br />
+configured to run server and app when running this command
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+the proxy will be running on (http://localhost:8000)
 
 The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
+### `npm dev`
+
+Does the same as above but if you want to run them seperately cd into sound_soloution and npm start then in a seperate terminal cd into api and run npm start
+
 
 ### `npm test`
 
