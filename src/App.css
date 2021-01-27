@@ -9,4 +9,12 @@
   margin-top: -5px;
 }
 
+.artistStyle {
+  text-align: left;
+  color: white;
+  transition: transform 100ms ease-in;
+}
 
+.artistStyle:hover {
+  transform: scale(1.07);
+}

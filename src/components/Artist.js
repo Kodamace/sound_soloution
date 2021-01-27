@@ -1,4 +1,6 @@
 import React, { useEffect } from "react";
+import "../App.css";
+
 import { useDispatch, useSelector } from "react-redux";
 import { getExternalArtistDetails } from "../features/artists/artistsSlice";
 
@@ -6,10 +8,6 @@ import styled from "styled-components";
 
 import { ExtraDataFromDifferentRoot } from "./ExtraData";
 
-const ArtistStyle = styled.div`
-  text-align: left;
-  color: white;
-`;
 const ArtistInfo = styled.div`
   background-color: rgb(88, 60, 153);
   margin-bottom: 20px;
@@ -45,7 +43,7 @@ function Artist({ id, artist }) {
   };
 
   return (
-    <ArtistStyle>
+    <div className="artistStyle">
       <ArtistInfo>
         <img src={cover_medium} className="_image" alt="" />
         <ArtistInfoSpacing>
@@ -53,7 +51,7 @@ function Artist({ id, artist }) {
           <ExtraDataFromDifferentRoot artistId={id} />
         </ArtistInfoSpacing>
       </ArtistInfo>
-    </ArtistStyle>
+    </div>
   );
 }
 
