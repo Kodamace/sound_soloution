@@ -7,8 +7,8 @@ function Album({ album }) {
   return (
     <div className="album">
       <img src={cover_medium} className="_image" alt="" />
-      <div className="album_footer">
-        <p className="album_title">
+      <div className="albumFooter">
+        <p className="albumTtitle">
           {title.length > 25 ? title.slice(0, 22) + "..." : title}
         </p>
       </div>

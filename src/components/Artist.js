@@ -2,7 +2,21 @@ import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getExternalArtistDetails } from "../features/artists/artistsSlice";
 
+import styled from "styled-components";
+
 import { ExtraDataFromDifferentRoot } from "./ExtraData";
+
+const ArtistStyle = styled.div`
+  text-align: left;
+  color: white;
+`;
+const ArtistInfo = styled.div`
+  background-color: rgb(88, 60, 153);
+  margin-bottom: 20px;
+`;
+const ArtistInfoSpacing = styled.div`
+  padding: 20px;
+`;
 
 function Artist({ id, artist }) {
   const artistStatus = useSelector((state) => state.artists.status);
@@ -31,15 +45,15 @@ function Artist({ id, artist }) {
   };
 
   return (
-    <div style={{ textAlign: "left", marginTop: 10, color: "#fff" }}>
-      <div style={{ background: "rgb(88, 60, 153)" }}>
+    <ArtistStyle>
+      <ArtistInfo>
         <img src={cover_medium} className="_image" alt="" />
-        <div style={{ padding: 20 }}>
+        <ArtistInfoSpacing>
           <p>{name}</p>
           <ExtraDataFromDifferentRoot artistId={id} />
-        </div>
-      </div>
-    </div>
+        </ArtistInfoSpacing>
+      </ArtistInfo>
+    </ArtistStyle>
   );
 }
 
