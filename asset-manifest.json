@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/sound_soloution/static/css/main.3aca35af.chunk.css",
+    "main.js": "/sound_soloution/static/js/main.c6b9d4d1.chunk.js",
+    "main.js.map": "/sound_soloution/static/js/main.c6b9d4d1.chunk.js.map",
+    "runtime-main.js": "/sound_soloution/static/js/runtime-main.4d6b7629.js",
+    "runtime-main.js.map": "/sound_soloution/static/js/runtime-main.4d6b7629.js.map",
+    "static/js/2.4cddda30.chunk.js": "/sound_soloution/static/js/2.4cddda30.chunk.js",
+    "static/js/2.4cddda30.chunk.js.map": "/sound_soloution/static/js/2.4cddda30.chunk.js.map",
+    "index.html": "/sound_soloution/index.html",
+    "static/css/main.3aca35af.chunk.css.map": "/sound_soloution/static/css/main.3aca35af.chunk.css.map",
+    "static/js/2.4cddda30.chunk.js.LICENSE.txt": "/sound_soloution/static/js/2.4cddda30.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4d6b7629.js",
+    "static/js/2.4cddda30.chunk.js",
+    "static/css/main.3aca35af.chunk.css",
+    "static/js/main.c6b9d4d1.chunk.js"
+  ]
+}
